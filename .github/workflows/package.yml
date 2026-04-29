@@ -15,12 +15,10 @@ jobs:
         # runner: The machine that builds your game. See https://docs.github.com/en/actions/how-tos/write-workflows/choose-where-workflows-run/choose-the-runner-for-a-job
         # target: The platform the game will run on.
         include:
-          - runner: ubuntu-latest
-            target: operagx
           # - runner: ubuntu-latest
           #   target: linux
-          # - runner: ubuntu-latest
-          #   target: windows
+          - runner: ubuntu-latest
+            target: windows
           # - runner: macos-latest
           #   target: mac
     runs-on: ${{ matrix.runner }}
